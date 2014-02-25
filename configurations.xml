@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<infinispan xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="urn:infinispan:config:6.0 http://www.infinispan.org/schemas/infinispan-config-6.0.xsd"
+   xmlns="urn:infinispan:config:6.0">
+
+  <global/>
+
+  <default>
+    <indexing enabled="true" indexLocalOnly="true">
+      <properties>
+        <!--property name="default.indexmanager" value="near-real-time"/-->
+        <property name="default.directory_provider" value="RAM"/>
+      </properties>
+    </indexing>
+  </default>
+
+  <namedCache name="regularCache">
+    <indexing enabled="false" />
+  </namedCache>
+
+</infinispan>
