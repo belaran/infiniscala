@@ -14,7 +14,6 @@ import org.infinispan.Cache;
 import org.infinispan.query.Search;
 import org.infinispan.query.SearchManager;
 
-
 @Indexed
 public class MyProduct {
     public Long id;
